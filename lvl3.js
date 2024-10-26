@@ -115,7 +115,7 @@ function update() {
     }
 
     if (elapsedTime >= 11) {
-        window.location.replace("Victoria3.html");
+        window.location.replace("victoria3.html");
         return;
     }
 
