@@ -111,7 +111,7 @@ function update() {
     }
 
     if (elapsedTime >= 21) {
-        window.location.replace("Victoria2.html");
+        window.location.replace("victoria2.html");
         return;
     }
 
