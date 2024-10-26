@@ -1,0 +1,248 @@
+body {
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#0B192C, #0B192C, #1A4870);
+    transition: background-color 1s ease; /* Transición para el fondo del body */
+}
+@keyframes fadeInAndUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px); /* Desplazamiento inicial hacia abajo */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* Posición final */
+    }
+}
+
+.cuadrado1, .cuadrado2, .cuadrado3, .cuadrado4, .cuadrado5, .cuadrado6, .cuadrado7 {
+    z-index: 50;
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(135deg, #00f0ff, #7CF5FF, #00f0ff);
+    box-shadow: 0 0 20px #00f0ff, 0 0 40px #00f0ff, 0 0 60px #00f0ff;
+    position: absolute;
+    opacity: 0;
+    animation: fadeInAndUp 1.5s ease forwards;
+    transition: background 1s ease, box-shadow 1s ease;
+}
+
+
+.cuadrado1 { top: 20%; left: 5%; } 
+.cuadrado2 { top: 20%; right: 5%; } 
+.cuadrado3 { bottom: 20%; left: 5%; } 
+.cuadrado4 { bottom: 20%; right: 5%; } 
+.cuadrado5 { top: 45%; left: 2%; } 
+.cuadrado6 { top: 45%; right: 2%; } 
+.cuadrado7 { top: 10%; left: 50%; transform: translateX(-50%); } 
+
+
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.niveld {
+    width: 90px;
+    height: 90px;
+    background-color: rgba(255, 255, 255, .1);
+    box-shadow: 3px 3px 3px 3px rgba(255, 255, 255, 0.3); 
+    border: 5px solid white;
+    margin: 15px;
+    display: inline-block;
+    
+}
+
+.niveld:hover {
+    background-color: rgba(95, 95, 95, .1);
+    border: 5px solid rgba(255, 255, 255, .8);
+}
+
+.niveldemon {
+    width: 90px;
+    height: 90px;
+    background-color: rgba(255, 0, 0, .5);
+    box-shadow: 0 0 20px #820300, 0 0 40px #820300, 0 0 60px #820300;
+    border: 5px solid red;
+    margin: 30px;
+    display: inline-block;
+    transition: background-color 1s ease, border 1s ease, box-shadow 1s ease; /* Transición para el demon */
+}
+
+h2 {
+    margin-top: 30px;
+    color: white;
+}
+
+.niveldemon h2 {
+    color: red;
+}
+
+a {
+    text-decoration: none;
+}
+
+.niveldemon:hover {
+    background-color: rgba(58, 0, 0, 1);
+    border: 5px solid rgba(128, 0, 0, .8);
+    box-shadow: 0 0 20px red, 0 0 40px red, 0 0 60px red;
+} 
+
+.contenedor {
+    border-color: #ffff;
+    position: absolute; /* Esto es importante */
+    width: 100%; /* Ajusta según tus necesidades */
+    height: 500px; /* Ajusta según tus necesidades */
+    padding: 20px;
+}
+
+.GOV {
+    padding: 20px;
+    z-index: 59;
+    color: rgba(22, 22, 22, 0.9); 
+    
+    position: absolute; 
+    font-family: 'Tahoma', sans-serif;
+    font-size: 75px;
+    text-align: center;
+
+    top: 42%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+
+    text-shadow: 0 0 10px #ffff, 0 0 20px #00f0ff, 0 0 30px #00f0ff, 0 0 40px #1e90ff;
+
+    opacity: 0; 
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: 1.0s; /* Retraso de 1.5 segundos */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; 
+        transform: translate(-50%, -60%); 
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.GOv {
+    background-color: whitesmoke;
+    padding: 17px 30px;
+    z-index: 59;
+    color: rgba(22, 22, 22, 0.9); 
+    
+    position: absolute; 
+    font-family: 'Tahoma', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    
+    top: 75%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    
+    opacity: 0; 
+    animation: fadeInGOv 4s ease-in-out forwards;
+    animation-delay: 1.5s; /* Retraso de 1.5 segundos */
+}
+
+.GoV {
+    background-color: whitesmoke;
+    padding: 15px 50px;
+    z-index: 59;
+    color: rgba(22, 22, 22, 0.9); 
+    
+    position: absolute;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    
+    top: 89%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    
+    opacity: 0;
+    animation: fadeInGoV 4s ease-in-out forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeInGOv {
+    0% {
+        opacity: 0; 
+        transform: translate(-50%, -60%);
+    }
+    15% {
+        opacity: 0.5;
+        transform: translate(-50%, -50%); 
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes fadeInGoV {
+    0% {
+        opacity: 0; 
+        transform: translate(-50%, -60%);
+    }
+    20% {
+        opacity: 0.5;
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.GOV {
+    padding: 20px;
+    z-index: 59;
+    color: rgba(22, 22, 22, 0.9); 
+    
+    position: absolute; 
+    font-family: 'Tahoma', sans-serif;
+    font-size: 75px;
+    text-align: center;
+
+    top: 42%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+
+    text-shadow: 0 0 10px #ffff, 0 0 20px #00f0ff, 0 0 30px #00f0ff, 0 0 40px #1e90ff;
+
+    opacity: 0; 
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: 1.5s; /* Retraso de 1.5 segundos */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0; 
+        transform: translate(-50%, -60%); 
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+
+ 

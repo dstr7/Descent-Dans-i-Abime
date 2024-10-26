@@ -1,0 +1,59 @@
+.body1 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0E3B2E, #0A5B4E); /* Verde más oscuro */
+    box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.8); /* Sombra oscura más intensa */
+}
+
+
+.body2 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #2B2B2B, #0F0F0F); /* Tonos gris más oscuros */
+    box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.9); /* Sombras aún más oscuras */
+}
+
+
+
+
+.body3 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #000000, #C20C2D); 
+    box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.9); 
+}
+
+.body4 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg,000000 #581845, #900C3F, #BF4F6D);
+    box-shadow: inset 0 0 150px rgba(0, 0, 0, 0.9); 
+}
+.body4 {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg,#000000, #581845, #900C3F,#000000);
+    box-shadow: inset 0 100 150px rgba(0, 0, 0, 0.9); 
+}
+
+
+
+canvas {
+    border: 3px solid #000;
+    background-color: #0000;
+}

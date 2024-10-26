@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Partida</title>
+    <link rel="stylesheet" type="text/css" href="NuevaPs.css">
+</head>
+<body>
+<div class="cuadrado2"></div>
+<div class="cuadrado1"></div>
+<div class="cuadrado3"></div>
+<div class="cuadrado4"></div>
+<div class="cuadrado5"></div>
+<div class="cuadrado6"></div>
+<div class="cuadrado7"></div>
+
+
+<div class="container">
+    <a href="index.html"><div class="niveld"><center><h2>1</h2></center></div></a>
+    <a href="lvl2.html"><div class="niveld"><center><h2>2</h2></center></div></a>
+    <a href="lvl3.html"><div class="niveld"><center><h2>3</h2></center></div></a>
+    <a href="lvl4.html"><div class="niveldemon"><center><h2>4</h2></center></div></a>
+</div>
+
+<script>
+    const niveldemon = document.querySelector('.niveldemon');
+    const body = document.body;
+    const cuadrado1 = document.querySelector('.cuadrado1');
+    const cuadrado2 = document.querySelector('.cuadrado2');
+    const cuadrado3 = document.querySelector('.cuadrado3');
+    const cuadrado4 = document.querySelector('.cuadrado4');
+    const cuadrado5 = document.querySelector('.cuadrado5');
+    const cuadrado6 = document.querySelector('.cuadrado6');
+    const cuadrado7 = document.querySelector('.cuadrado7');
+    const otrosElementos = document.querySelectorAll('.niveld');
+
+    niveldemon.addEventListener('mouseenter', () => {
+       
+        body.style.background = '#000000'; 
+        
+      
+        cuadrado1.style.background = '#820300'; 
+        cuadrado1.style.boxShadow = '0 0 20px red, 0 0 40px red, 0 0 60px red';
+
+        cuadrado2.style.background = '#580000';
+        cuadrado2.style.boxShadow = '0 0 20px red, 0 0 40px red, 0 0 60px red';
+
+      
+        cuadrado3.style.background = '#580000';
+        cuadrado3.style.boxShadow = '0 0 20px red, 0 0 40px red, 0 0 60px red';
+        
+        cuadrado4.style.background = '#580000';
+        cuadrado4.style.boxShadow = '0 0 20px red, 0 0 40px red, 0 0 60px red';
+
+        cuadrado5.style.background = '#580000';
+        cuadrado5.style.boxShadow = '0 0 20px red, 0 0 40px red, 0 0 60px red';
+
+        cuadrado6.style.background = '#580000';
+        cuadrado6.style.boxShadow = '0 0 20px red, 0 0 40px red, 0 0 60px red';
+        
+        cuadrado7.style.background = '#580000';
+        cuadrado7.style.boxShadow = '0 0 20px red, 0 0 40px red, 0 0 60px red';
+        
+        otrosElementos.forEach(element => {
+            element.style.boxShadow = '0 0 20px rgba(255, 0, 0, 0.8)'; 
+        });
+    });
+
+    niveldemon.addEventListener('mouseleave', () => {
+       
+        body.style.background = 'linear-gradient(#0B192C, #0B192C, #1A4870)';
+        
+        
+        cuadrado1.style.background = 'linear-gradient(135deg, #00f0ff, #7CF5FF, #00f0ff)';
+        cuadrado1.style.boxShadow = '0 0 20px #00f0ff, 0 0 40px #00f0ff, 0 0 60px #00f0ff';
+
+         cuadrado2.style.background = 'linear-gradient(135deg, #00f0ff, #7CF5FF, #3A6D8C)';
+        cuadrado2.style.boxShadow = '0 0 20px #00f0ff, 0 0 40px #00f0ff, 0 0 60px #00f0ff';
+
+       
+        cuadrado3.style.background = 'linear-gradient(135deg, #00f0ff, #7CF5FF, #3A6D8C)';
+        cuadrado3.style.boxShadow = '0 0 20px #00f0ff, 0 0 40px #00f0ff, 0 0 60px #00f0ff';
+        
+        cuadrado4.style.background = 'linear-gradient(135deg, #3A6D8C, #7CF5FF, #00f0ff)';
+        cuadrado4.style.boxShadow = '0 0 20px #00f0ff, 0 0 40px #00f0ff, 0 0 60px #00f0ff';
+
+        cuadrado5.style.background = 'linear-gradient(135deg, #00f0ff, #7CF5FF, #00f0ff)';
+        cuadrado5.style.boxShadow = '0 0 20px #00f0ff, 0 0 40px #00f0ff, 0 0 60px #00f0ff';
+        cuadrado6.style.background = 'linear-gradient(135deg, #00f0ff, #7CF5FF, #00f0ff)';
+        cuadrado6.style.boxShadow = '0 0 20px #00f0ff, 0 0 40px #00f0ff, 0 0 60px #00f0ff';
+        cuadrado7.style.background = 'linear-gradient(135deg, #00f0ff, #7CF5FF, #00f0ff)';
+        cuadrado7.style.boxShadow = '0 0 20px #00f0ff, 0 0 40px #00f0ff, 0 0 60px #00f0ff';
+
+
+
+
+
+        
+        otrosElementos.forEach(element => {
+            element.style.boxShadow = '3px 3px 3px 3px rgba(255, 255, 255, 0.3)'; 
+        });
+    });
+     const elementosNiveld = document.querySelectorAll('.niveld');
+    elementosNiveld.forEach((element) => {
+        element.addEventListener('mouseenter', () => {
+            element.classList.add('destello');
+            setTimeout(() => {
+                element.classList.remove('destello');
+            }, 300); 
+        });
+    });
+</script>
+
+</body>
+</html>
